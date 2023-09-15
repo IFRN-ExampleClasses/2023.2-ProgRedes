@@ -30,7 +30,7 @@
 
 <p>Uma vez atualizado, utilizamos o comando PIP para instalar a biblioteca desejada:</p>
 
-<pre><code>pip install <i>nome_biblioteca</i></code></pre>
+<pre><code>pip install <i>nome_biblioteca</i> --user</code></pre>
 
 Onde <i>nome_biblioteca</i> é o nome da biblioteca que se deseja instalar.
  
