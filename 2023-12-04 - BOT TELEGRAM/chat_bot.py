@@ -1,10 +1,10 @@
 import requests
 
-API_KEY = 'YOUT_API_KEY_HERE'
+API_KEY = 'YOUR_API_TOKEN_HERE'
 
 strURL = f'https://api.telegram.org/bot{API_KEY}'
 
-reqURL = requests.get(url_req + '/getUpdates')
+reqURL = requests.get(strURL + '/getUpdates')
 
 print(reqURL.status_code)
 
@@ -17,5 +17,5 @@ mensagem = input('Digite Algo: ')
 
 dados = {'chat_id':id_chat, 'text':mensagem}
 
-post = requests.post(url_req + '/sendMessage',data=dados)
+post = requests.post(strURL + '/sendMessage',data=dados)
 
