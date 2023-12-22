@@ -3,12 +3,13 @@ import sys, os, time, platform, random, threading, logging, logging.config
 
 #------------------------------------------------------------
 MAX_VOLTAS  = 100
+DIR_APP = os.path.dirname(os.path.abspath(__file__))
 LST_PILOTOS = ['PENELOPE CHARMOSA', 'DICK VIGARISTA   ', 
                'PETER PERFEITO   ', 'RUFUS LENHADOR   ']
 QT_PILOTOS  = len(LST_PILOTOS)
 
 #------------------------------------------------------------
-logging.config.fileConfig('log_config.ini')
+logging.config.fileConfig(DIR_APP + '\\log_config.ini')
 loggerPiloto  = logging.getLogger('piloto')
 loggerChegada = logging.getLogger('chegada')
 
